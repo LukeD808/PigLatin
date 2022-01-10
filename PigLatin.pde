@@ -40,7 +40,7 @@ public String pigLatin(String sWord)
     return sWord + "way";
   }
   else if(findFirstVowel(sWord) == -2){
-    return sWord.substring(1) + "quay";
+    return sWord.substring(2) + "quay";
   }
   else if(findFirstVowel(sWord) > 0){
     return sWord.substring(findFirstVowel(sWord)) + sWord.substring(0,findFirstVowel(sWord)) + "ay";
