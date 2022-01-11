@@ -17,9 +17,11 @@ public int findFirstVowel(String sWord)
 {
   for (int i = 0; i < sWord.length(); i++){
     if (sWord.substring(i,i+1).equals("a") || sWord.substring(i,i+1).equals("e") || sWord.substring(i,i+1).equals("i") || sWord.substring(i,i+1).equals("o") || sWord.substring(i,i+1).equals("u")){
-      if (sWord.substring(i,i+1).equals("u")){
-        if (sWord.substring(i-1,i).equals("q")){
-          return -2;
+      if (i > 0){
+        if (sWord.substring(i,i+1).equals("u")){
+          if (sWord.substring(i-1,i).equals("q")){
+            return -2;
+          }
         }
       }
       return i;
